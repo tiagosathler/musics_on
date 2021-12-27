@@ -1,5 +1,6 @@
 import React from 'react';
 import { useContext, useState } from 'react/cjs/react.development';
+import Header from '../Components/Header';
 import Loading from '../Components/Loading';
 import ContextMusicsOn from '../ContextApi/ContextMusicsOn';
 import searchAlbumsAPI from '../services/searchAlbumsAPI';
@@ -7,10 +8,10 @@ import searchAlbumsAPI from '../services/searchAlbumsAPI';
 const MIN_ARTIST_CARACTERES = 1;
 
 function Search() {
-  const { albumsCollection, setAlbumsCollection } = useContext(ContextMusicsOn);
+  const { albumsCollection, setAlbumsCollection, userName } = useContext(ContextMusicsOn);
   const [artist, setArtist] = useState('');
   const [loading, setLoading] = useState(false);
-  console.log(artist);
+  console.log(userName);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -50,7 +51,12 @@ function Search() {
   if (loading) return <Loading />;
 
   return (
-    formFunc()
+    <div>
+      <Header />
+      <h2>{userName}</h2>
+      {formFunc()}
+    </div>
+
   );
 }
 
