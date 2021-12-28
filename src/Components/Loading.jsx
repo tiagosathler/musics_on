@@ -2,27 +2,11 @@ import React from 'react';
 
 function Header() {
   return (
-  <h3>Carregando...</h3>
+    <h3>Carregando...</h3>
   );
 }
 
 export default Header;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 // import React from 'react';
 
@@ -35,8 +19,3 @@ export default Header;
 // }
 
 // export default Loading;
-
-
-
-
-

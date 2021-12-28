@@ -71,21 +71,21 @@ function Login() {
 
         </button>
       </form>
-        <Button
-          type="submit"
-          disabled={ password.length < MIN_CARACTER_LENGTH }
-          variant="light"
-        >
-          Light
+      <Button
+        type="submit"
+        disabled={ password.length < MIN_CARACTER_LENGTH }
+        variant="light"
+      >
+        Light
 
-        </Button>
-        <Button
-          disabled={ password.length < MIN_CARACTER_LENGTH }
-          variant="dark"
-          type="submit"
-        >
-          Dark
-        </Button>
+      </Button>
+      <Button
+        disabled={ password.length < MIN_CARACTER_LENGTH }
+        variant="dark"
+        type="submit"
+      >
+        Dark
+      </Button>
     </div>
   );
 }
