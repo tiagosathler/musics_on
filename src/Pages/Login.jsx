@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useContext } from 'react/cjs/react.development';
 import { useNavigate } from 'react-router-dom';
-import { Button } from 'bootstrap';
+import { Button } from 'react-bootstrap';
 import ContextMusicsOn from '../ContextApi/ContextMusicsOn';
 import { createUser } from '../services/userAPI';
 import Loading from '../Components/Loading';
